@@ -60,7 +60,7 @@ class TestBurger:
         )
         assert burger.get_receipt() == expected_receipt
         
-        def test_move_ingredient(self, burger, mock_sauce, mock_filling):
+    def test_move_ingredient(self, burger, mock_sauce, mock_filling):
             """Тестирование метода перемещения ингредиентов в бургере."""
             burger.ingredients = [mock_sauce, mock_filling]
             burger.move_ingredient(0, 1)
